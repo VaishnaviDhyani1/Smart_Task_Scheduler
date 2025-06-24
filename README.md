@@ -18,7 +18,6 @@ A comprehensive full-stack Python Flask web application for simulating and visua
 
 ### Step 1: Clone the Repository
 ```bash
-git clone <repository-url>
 cd smart-os-scheduler
 ```
 
