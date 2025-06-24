@@ -1,26 +1,7 @@
-# Smart OS Scheduler
+# Smart task Scheduler
 
 A comprehensive full-stack Python Flask web application for simulating and visualizing various CPU scheduling algorithms with modern UI and advanced features.
 
-## 🚀 Features
-
-### Core Scheduling Algorithms
-- **FCFS (First Come First Serve)** - Non-preemptive
-- **SJF Non-Preemptive** - Shortest Job First
-- **SJF Preemptive (SRTF)** - Shortest Remaining Time First
-- **Priority Non-Preemptive** - Priority-based scheduling
-- **Priority Preemptive** - Preemptive priority scheduling
-- **Round Robin** - Time quantum-based scheduling
-
-### Advanced Features
-- 📅 **Date-based Organization** - Group processes by scheduled dates
-- 📊 **Gantt Chart Visualization** - Visual representation of process execution
-- 📈 **Performance Comparison** - Compare all algorithms side-by-side
-- 🏆 **Best Algorithm Selection** - Automatically highlights the optimal algorithm
-- 📋 **CSV Export** - Export results to CSV format
-- 📄 **PDF Export** - Generate detailed PDF reports
-- 🎨 **Modern UI** - Responsive design with Bootstrap and custom styling
-- 📱 **Mobile Friendly** - Works seamlessly on all devices
 
 ### Process Management
 - Add processes with detailed parameters (PID, arrival time, burst time, priority, etc.)
@@ -29,7 +10,7 @@ A comprehensive full-stack Python Flask web application for simulating and visua
 - Clear all processes
 - Real-time validation and error handling
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -64,7 +45,7 @@ python app.py
 
 The application will be available at `http://localhost:5000`
 
-## 📖 Usage Guide
+##  Usage Guide
 
 ### 1. Adding Processes
 1. Navigate to the home page
@@ -75,6 +56,7 @@ The application will be available at `http://localhost:5000`
    - **Priority**: Process priority (lower number = higher priority)
    - **Scheduled Date**: Date for process scheduling
    - **Time Quantum**: For Round Robin algorithm (default: 2 minutes)
+   - 
 3. Click "Add Process"
 
 ### 2. Viewing Processes
@@ -91,8 +73,7 @@ The application will be available at `http://localhost:5000`
 - **CSV Export**: Download results in CSV format for analysis
 - **PDF Export**: Generate professional PDF reports with charts and tables
 
-## 🏗️ Project Structure
-
+##  Project Structure
 ```
 smart-os-scheduler/
 ├── app.py                 # Main Flask application
@@ -112,7 +93,7 @@ smart-os-scheduler/
     └── charts/           # Generated chart images
 ```
 
-## 🔧 Technical Details
+##  Technical Details
 
 ### Backend Architecture
 - **Flask**: Web framework for routing and request handling
@@ -133,7 +114,7 @@ smart-os-scheduler/
 - **Performance Optimization**: Efficient data structures and algorithms
 - **Extensible**: Easy to add new scheduling algorithms
 
-## 📊 Algorithm Details
+##  Algorithm Details
 
 ### FCFS (First Come First Serve)
 - **Type**: Non-preemptive
@@ -159,7 +140,7 @@ smart-os-scheduler/
 - **Advantages**: Fair, no starvation, good for time-sharing systems
 - **Disadvantages**: Performance depends on time quantum size
 
-## 🎯 Performance Metrics
+##  Performance Metrics
 
 The application calculates and compares:
 - **Completion Time**: When each process finishes execution
@@ -168,7 +149,7 @@ The application calculates and compares:
 - **Average Waiting Time**: Mean waiting time across all processes
 - **Average Turnaround Time**: Mean turnaround time across all processes
 
-## 🔍 API Endpoints
+##  API Endpoints
 
 ### REST API
 - `GET /api/processes/<date>` - Get processes for a specific date
@@ -183,66 +164,8 @@ The application calculates and compares:
 - `GET /export_csv/<date>` - Export CSV results
 - `GET /export_pdf/<date>` - Export PDF results
 
-## 🐛 Troubleshooting
 
-### Common Issues
 
-1. **Import Errors**
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-2. **Port Already in Use**
-   ```bash
-   # Change port in app.py
-   app.run(debug=True, host='0.0.0.0', port=5001)
-   ```
-
-3. **Matplotlib Backend Issues**
-   ```python
-   import matplotlib
-   matplotlib.use('Agg')  # Add this before importing pyplot
-   ```
-
-4. **Permission Errors**
-   ```bash
-   # On Linux/macOS
-   chmod +x app.py
-   ```
-
-### Debug Mode
-Run with debug mode for detailed error messages:
-```bash
-export FLASK_ENV=development
-python app.py
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Flask community for the excellent web framework
-- Bootstrap team for the responsive UI components
-- Matplotlib developers for the visualization library
-- Font Awesome for the beautiful icons
-
-## 📞 Support
-
-For support and questions:
-- Create an issue in the repository
-- Check the troubleshooting section
-- Review the code comments for implementation details
 
 ---
-
-**Made with ❤️ for Operating Systems Education** 
